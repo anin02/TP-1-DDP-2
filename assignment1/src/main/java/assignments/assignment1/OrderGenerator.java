@@ -126,7 +126,7 @@ public class OrderGenerator {
         tanggalPemesanan = OrderID.substring(4,6) + "/" + OrderID.substring(6, 8) + "/" + OrderID.substring(8, 12);
 
         // Mencetak Bill
-        String hasilGenerateBill = "Bill:\nOrderID: " + OrderID + "\nTanggal Pemesanan: " + tanggalPemesanan + "\nLokasi Pengiriman: " + lokasi + "\nBiaya Ongkos Kirim: Rp " + biayaOngkir;
+        String hasilGenerateBill = "Bill:\nOrder ID: " + OrderID + "\nTanggal Pemesanan: " + tanggalPemesanan + "\nLokasi Pengiriman: " + lokasi + "\nBiaya Ongkos Kirim: Rp " + biayaOngkir;
 
         return hasilGenerateBill;
     }
