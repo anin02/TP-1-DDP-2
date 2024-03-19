@@ -16,8 +16,8 @@ public class MainMenu {
         initUser(); // Inisialisasi userList
 
         boolean programRunning = true;
+        printHeader();
         while(programRunning){
-            printHeader();
             startMenu();
             int command = input.nextInt();
             input.nextLine();
@@ -79,7 +79,7 @@ public class MainMenu {
                 System.out.println("Perintah tidak diketahui, silakan periksa kembali.");
             }
         }
-        System.out.println("\nTerima kasih telah menggunakan DepeFood ^___^");
+        System.out.println("Terima kasih telah menggunakan DepeFood ^___^");
     }
 
     // Method mencari user
@@ -145,6 +145,7 @@ public class MainMenu {
                 }
             }
 
+            System.out.println(menuFound);
             // Apabila menu ada pada restoran, maka counter akan bertambah 1
             int jumlahOrder = daftarMenu.size();
             if (jumlahOrder != menuFound) { // counter harus sesuai dengan banyak menu yang dipesan
@@ -519,7 +520,7 @@ public class MainMenu {
     }
 
     public static void printHeader(){ // Header
-        System.out.println("\n>>=======================================<<");
+        System.out.println(">>=======================================<<");
         System.out.println("|| ___                 ___             _ ||");
         System.out.println("||| . \\ ___  ___  ___ | __>___  ___  _| |||");
         System.out.println("||| | |/ ._>| . \\/ ._>| _>/ . \\/ . \\/ . |||");
@@ -529,7 +530,7 @@ public class MainMenu {
     }
 
     public static void startMenu(){ // Menu Awal
-        System.out.println("Selamat datang di DepeFood!");
+        System.out.println("\nSelamat datang di DepeFood!");
         System.out.println("--------------------------------------------");
         System.out.println("Pilih menu:");
         System.out.println("1. Login");
@@ -539,7 +540,7 @@ public class MainMenu {
     }
 
     public static void menuAdmin(){ // Menu Admin
-        System.out.println("\n--------------------------------------------");
+        System.out.println("--------------------------------------------");
         System.out.println("Pilih menu:");
         System.out.println("1. Tambah Restoran");
         System.out.println("2. Hapus Restoran");
@@ -549,7 +550,7 @@ public class MainMenu {
     }
 
     public static void menuCustomer(){ // Menu Customer
-        System.out.println("\n--------------------------------------------");
+        System.out.println("--------------------------------------------");
         System.out.println("Pilih menu:");
         System.out.println("1. Buat Pesanan");
         System.out.println("2. Cetak Bill");
