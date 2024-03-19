@@ -1,6 +1,7 @@
 package assignments.assignment2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Order {
     private String orderId;
@@ -15,9 +16,10 @@ public class Order {
         this.tanggalPemesanan = tanggal;
         this.biayaOngkir = ongkir;
         this.restaurant = resto;
-        this.menuPesanan = items;
+        this.menuPesanan = new ArrayList<Menu>(Arrays.asList(items)); // Mengubah input Array menjadi ArrayList
     }
     
+    // Setter dan Getter
     public String getOrderId(){
         return orderId;
     }
@@ -34,7 +36,7 @@ public class Order {
         return restaurant;
     }
 
-    public Menu getMenuPesanan(){
+    public ArrayList<Menu> getMenuPesanan(){
         return menuPesanan;
     }
 
@@ -45,5 +47,4 @@ public class Order {
     public void setStatusPesanan(boolean statusPesanan){
         this.statusPesanan = statusPesanan;
     }
-    // TODO: tambahkan methods yang diperlukan untuk class ini
 }

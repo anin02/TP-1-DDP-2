@@ -1,5 +1,7 @@
 package assignments.assignment2;
 
+import java.util.ArrayList;
+
 public class User {
     private String namaUser;
     private String noTeleponUser;
@@ -8,15 +10,17 @@ public class User {
     private String roleUser;
     private ArrayList<Order> orderHistory;
 
+    // Data fields
     public User(String nama, String nomorTelepon, String email, String lokasi, String role){
         this.namaUser = nama;
         this.noTeleponUser = nomorTelepon;
         this.emailUser = email;
         this.lokasiUser = lokasi;
         this.roleUser = role;
-        this.orderHistory = null;
+        this.orderHistory = new ArrayList<>();
     }
 
+    // Setter dan Getter
     public String getNamaUser(){
         return namaUser;
     }
@@ -37,7 +41,7 @@ public class User {
         return roleUser;
     }
 
-    public Order getOrderHistory(){
+    public ArrayList<Order> getOrderHistory(){ 
         return orderHistory;
     }
 
@@ -45,5 +49,4 @@ public class User {
         this.orderHistory = orderHistory;
     }
 
-    // TODO: tambahkan methods yang diperlukan untuk class ini
 }

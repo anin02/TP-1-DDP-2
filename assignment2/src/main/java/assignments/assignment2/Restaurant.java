@@ -10,16 +10,16 @@ public class Restaurant {
         this.namaResto = nama;
     }
     
+    // Setter dan Getter
     public String getNamaResto(){
         return namaResto;
     }
 
-    public Menu getDaftarMenu(){
+    public ArrayList<Menu> getDaftarMenu(){
         return daftarMenu;
     }
  
     public void setDaftarMenu(ArrayList<Menu> daftarMenu){
         this.daftarMenu = daftarMenu;
     }
-    // TODO: tambahkan methods yang diperlukan untuk class ini
 }
