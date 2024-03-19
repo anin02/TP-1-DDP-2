@@ -145,7 +145,6 @@ public class MainMenu {
                 }
             }
 
-            System.out.println(menuFound);
             // Apabila menu ada pada restoran, maka counter akan bertambah 1
             int jumlahOrder = daftarMenu.size();
             if (jumlahOrder != menuFound) { // counter harus sesuai dengan banyak menu yang dipesan
