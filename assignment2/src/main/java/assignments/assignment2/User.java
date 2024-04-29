@@ -1,6 +1,9 @@
 package assignments.assignment2;
+<<<<<<< HEAD
 
 import java.util.ArrayList;
+=======
+>>>>>>> a3374bc0a7a254532ce81e5027b827e968778571
 
 public class User {
     private String namaUser;
